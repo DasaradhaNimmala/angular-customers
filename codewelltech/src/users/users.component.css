@@ -1,0 +1,44 @@
+h2{
+    color: orange;
+}
+.user{    
+    width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: box-shadow .5s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgb(10 16 20 / 24%), 0 0 2px rgb(10 16 20 / 12%);
+    border-radius: 2px;
+}
+.activeUser{
+    background-color: rgb(133, 231, 133);
+}
+.inactiveUser{
+    background-color: rgb(255, 242, 242);
+}
+.fs-20{
+    font-size: 20px;
+}
+.brbt{
+    border-bottom:1px solid #beb1b1;
+}
+.lblsmall{
+    color: rgb(108,124,142);
+}
+.info-prime{
+    color: rgb(35,59,87);
+    font-size: 1.5rem;
+}
+.info{
+    color: rgb(83,93,105);
+    font-weight: 500;
+}
+.user:hover{
+    box-shadow: 0 2px 2px rgb(10 16 20 / 24%), 0 0 2px rgb(10 16 20 / 12%);
+}
+
+.userContainer{
+    padding: 10px;
+}

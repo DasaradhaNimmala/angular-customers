@@ -1,0 +1,32 @@
+<div class="userContainer">
+    <button class="m-3 btn btn-primary" (click)="addUser()">Add User</button>
+<div class="user" [ngStyle]="e ? {'background':'#eee'}:{'background':'#fff'}" 
+    *ngFor="let user of users;index as i;first as f;last as l;let e=even">  
+    {{hiddenItems | json}}
+    <div class="brbt p-3" (click)="hiddenItems[i]=!hiddenItems[i]">        
+       <div class="row">
+            <div class="col-md-6 col-sm-4">
+                <div class="info-prime">{{user.name}}</div>
+                <label class="lblsmall">Engineer</label> 
+            </div>
+            <div class="col-md-6 col-sm-4">
+                 <button (click)="deleteUser(i)" class="btn btn-primary">Delete User</button>
+            </div>
+       </div>
+    </div>
+    <div class="p-3" *ngIf="hiddenItems[i]">
+        <div class="row">
+            <div class="col-md-6 col-sm-4">
+                <div class="lblsmall"> Location</div>
+                <div class="lblsmall"> Gender</div>
+                <div class="lblsmall"> age</div>
+            </div>
+            <div class="col-md-6 col-sm-8 text-right">
+                <div class="info">{{user.location}}</div>
+                <div class="info">{{user.gender}}</div>
+                <div class="info"> {{user.age}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
